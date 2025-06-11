@@ -1,4 +1,4 @@
-"use client"; // ✅ Add this line at the top
+"use client";
 
 import React from "react";
 import Image from "next/image";
