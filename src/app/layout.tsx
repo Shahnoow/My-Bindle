@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "MyBindle",
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

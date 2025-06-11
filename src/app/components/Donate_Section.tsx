@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "../../styles/DonationSection.module.css";
 import phone1 from "../../../public/iphone1.jpg";
