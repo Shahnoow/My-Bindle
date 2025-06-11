@@ -63,13 +63,19 @@
   color: #777;
 }
 
-.button {
+.faded {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.showMoreButton {
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
 
-  color: rgb(25, 21, 248);
+  color: #ff5349;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }

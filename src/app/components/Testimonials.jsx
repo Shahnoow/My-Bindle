@@ -45,32 +45,34 @@ const testimonials = [
       "I’ve tried many social platforms, but this one truly stands out. The experience feels personal, the connections feel real, and every feature just makes sense.",
     image: "/users/nora.jpg",
   },
-  // Hidden testimonials
   {
     name: "User A",
     location: "Germany",
     message:
       "This platform brings people closer in the best way possible! From reconnecting with old friends to making new ones, every moment feels valuable.",
-    image: "/users/user-a.jpg",
+    image: "/users/user1.png",
   },
   {
     name: "User B",
     location: "Australia",
     message:
       "A social network that actually listens to its users! The design is sleek, the features are powerful, and the experience is seamless.",
-    image: "/users/user-b.jpg",
+    image: "/users/user3.png",
   },
 ];
 
 function Testimonials() {
   const [showAll, setShowAll] = useState(false);
-  const visibleTestimonials = showAll ? testimonials : testimonials.slice(0, 6);
+
+  const toggleShow = () => {
+    setShowAll((prev) => !prev);
+  };
 
   return (
     <section className={styles.testimonials}>
       <h2 className={styles.heading}>What Our Users Say</h2>
       <div className={styles.grid}>
-        {visibleTestimonials.map((t, index) => (
+        {(showAll ? testimonials : testimonials.slice(0, 6)).map((t, index) => (
           <div key={index} className={styles.card}>
             <div className={styles.stars}>★★★★★</div>
             <p className={styles.message}>{t.message}</p>
@@ -84,9 +86,11 @@ function Testimonials() {
           </div>
         ))}
       </div>
-      <button className={styles.button} onClick={() => setShowAll(!showAll)}>
-        {showAll ? "Show Less" : "See More"}
-      </button>
+      {testimonials.length > 6 && (
+        <button onClick={toggleShow} className={styles.showMoreButton}>
+          {showAll ? "Show Less" : "Show More"}
+        </button>
+      )}
     </section>
   );
 }
