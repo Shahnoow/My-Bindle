@@ -1,11 +1,11 @@
-import Image from "next/image";
 import Hero from "./components/Hero";
-import "../styles/globals.css";
-export default function Home() {
+import Services from "./components/Services";
+
+export default function Page() {
   return (
-    <div>
-      <main></main>
-      <footer></footer>
-    </div>
+    <main>
+      <Hero />
+      <Services />
+    </main>
   );
 }

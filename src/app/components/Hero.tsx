@@ -1,9 +1,19 @@
+"use client"; // ✅ Add this line at the top
+
 import React from "react";
 import Image from "next/image";
 import Logo from "../../../public/logo.png";
 import Timeline from "../../../public/Timeline.jpg";
 import styles from "../../styles/Hero.module.css";
-import { FaGithub, FaLinkedinIn, FaEnvelope, FaCircle } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaCircle,
+  FaLine,
+  FaPhoneVolume,
+} from "react-icons/fa";
+
 export default function Hero() {
   return (
     <div className={styles.hero}>
@@ -31,11 +41,19 @@ export default function Hero() {
         <div className={styles.aside}>
           <div className={styles.device}>
             <FaCircle className={styles.camera_icon} />
+            <div className={styles.card_1}>
+              <p>🔥 Seamless Connections</p>
+            </div>
+            <div className={styles.volume_buttons}></div>
+            <div className={styles.power_button}></div>
             <Image
               className={styles.timeline_img}
               src={Timeline}
               alt="Timeline"
             />
+            <div className={styles.card_2}>
+              <p>🌎 Discover & Explore</p>
+            </div>
           </div>
         </div>
       </div>

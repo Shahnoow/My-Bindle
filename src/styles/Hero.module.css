@@ -56,9 +56,14 @@
 }
 
 .btn {
-  width: 90px;
+  width: 150px;
   height: 40px;
   margin-top: 2%;
+  border-radius: 5px;
+  border: none;
+  color: #ff5349;
+  font-size: 12px;
+
   font-family: "ITC Avant Garde Gothic Std", sans-serif; /* Added font family */
 }
 
@@ -77,21 +82,127 @@
 } */
 .device {
   width: 300px;
-  border: 6px solid black;
-  border-radius: 20px 20px 20px 20px;
+
+  border-radius: 20px;
   height: 600px;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    #e0e0e0 0%,
+    #ffffff 20%,
+    #e0e0e0 40%,
+    #e0e0e0 60%,
+    #ffffff 80%,
+    #e0e0e0 100%
+  );
+  border-bottom: 16px solid rgba(31, 30, 30, 0.274);
+  border-right: 8px solid rgba(197, 193, 193, 0.7);
+  box-shadow: 4px 0 8px -1px rgba(197, 193, 193, 0.7);
 }
+
+.volume_buttons {
+  position: absolute;
+  right: -8px;
+  top: 15%;
+  width: 6px;
+  height: 60px;
+  background: #000000;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Volume Buttons (left side) */
+.power_button {
+  position: absolute;
+  right: -8px; /* Align with device border */
+  top: 30%;
+  display: flex;
+  width: 6px;
+  height: 35px;
+  background: #000000;
+  border-radius: 0 3px 3px 0;
+}
+
 .timeline_img {
   width: 295px;
   height: 595px;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 12px 12px 12px 12px;
+  border: 8px solid rgb(0, 0, 0);
+  border-radius: 20px;
 }
 
 .camera_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
   position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: black;
+  font-size: 14px;
+}
+
+.card_1 {
+  position: absolute;
+  background-color: #eeeeee;
+  width: 240px;
+  height: 60px;
+  left: -23%;
+  top: 5%;
+  border-radius: 12px;
+  display: flex; /* Changed to flex for better centering */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* White right border shadow effect */
+  box-shadow: 8px 0 8px -1px rgba(197, 193, 193, 0.7);
+
+  /* Optional: Add subtle glow */
+  border-right: 2px solid rgb(197, 193, 193, 0.7);
+  border-bottom: 2px solid rgba(197, 193, 193, 0.7);
+}
+
+.card_1 p {
+  color: #000000;
+  font-size: 14px;
+  padding: 0 10px;
+
+  /* Text shadow for better readability */
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+
+  /* If using ITC Avant Garde Gothic Std font */
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-weight: 500;
+}
+
+.card_2 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 240px;
+  height: 60px;
+  right: -23%;
+  top: 75%;
+  border-radius: 12px;
+  display: flex; /* Changed to flex for better centering */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* White right border shadow effect */
+  box-shadow: 0px 0 8px 0px rgba(197, 193, 193, 0.7);
+
+  /* Optional: Add subtle glow */
+  border-left: 1px solid rgb(197, 193, 193, 0.7);
+  border-bottom: 3px solid rgba(197, 193, 193, 0.7);
+}
+
+.card_2 p {
+  color: #000000;
+  font-size: 14px;
+  padding: 0 10px;
+
+  /* Text shadow for better readability */
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+
+  /* If using ITC Avant Garde Gothic Std font */
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-weight: 500;
 }
