@@ -7,7 +7,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        avant: ['"ITC Avant Garde Gothic Std"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
