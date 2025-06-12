@@ -13,7 +13,7 @@ export default function Page() {
       <AboutUs />
       <HowItWork />
       <DonationSection />
-      {/* <Testimonials /> */}
+      <Testimonials />
     </main>
   );
 }
