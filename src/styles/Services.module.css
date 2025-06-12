@@ -50,6 +50,10 @@
 }
 
 @media (max-width: 768px) {
+  .services {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }

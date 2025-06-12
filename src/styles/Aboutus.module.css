@@ -1,5 +1,5 @@
 .aboutMain {
-  background-color: #fff;
+  background-color: white;
   padding: 4rem 1.5rem;
 }
 
@@ -85,10 +85,17 @@
 }
 
 @media (max-width: 768px) {
+  .aboutMain {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
   .container {
     flex-direction: column;
+    width: 100%;
   }
-
+  .aside {
+    width: 100%;
+  }
   .aside h2 {
     font-size: 2rem;
   }

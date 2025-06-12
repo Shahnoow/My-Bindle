@@ -31,7 +31,7 @@
   font-family: "ITC Avant Garde Gothic";
   src: url("../../public/fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Demi.otf")
     format("otf");
-  /* Normal/Book should be 400 */
+
   font-style: normal;
   font-display: swap;
 }
@@ -40,7 +40,6 @@ body {
   font-family: "ITC Avant Garde Gothic Std", -apple-system, sans-serif;
 }
 
-/* Optional: Create utility classes */
 .avant-garde-regular {
   font-family: "ITC Avant Garde Gothic Std";
   font-weight: 400;

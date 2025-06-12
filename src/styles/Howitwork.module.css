@@ -57,3 +57,10 @@
   color: #666;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .howItWorkContainer {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+}
