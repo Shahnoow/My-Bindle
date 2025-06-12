@@ -1,3 +1,7 @@
+.body {
+  overflow-x: hidden;
+}
+
 .services {
   padding: 4rem 2rem;
   text-align: center;
@@ -50,12 +54,27 @@
 }
 
 @media (max-width: 768px) {
+  .body {
+    overflow-x: hidden;
+  }
   .services {
     width: 100%;
-    padding: 0rem 0rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 0rem;
+  }
+
+  .heading {
+    font-size: 2rem;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 

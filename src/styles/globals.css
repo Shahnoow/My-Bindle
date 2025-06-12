@@ -38,6 +38,8 @@
 
 body {
   font-family: "ITC Avant Garde Gothic Std", -apple-system, sans-serif;
+
+  overflow-x: hidden;
 }
 
 .avant-garde-regular {
