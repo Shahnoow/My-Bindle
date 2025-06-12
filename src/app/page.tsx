@@ -10,10 +10,10 @@ export default function Page() {
     <main>
       <Hero />
       <Services />
-      {/* <AboutUs />
+      <AboutUs />
       <HowItWork />
       <DonationSection />
-      <Testimonials /> */}
+      {/* <Testimonials /> */}
     </main>
   );
 }
