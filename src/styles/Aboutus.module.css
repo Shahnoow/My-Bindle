@@ -17,6 +17,7 @@
   flex: 1 1 45%;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .image {
