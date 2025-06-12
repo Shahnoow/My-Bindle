@@ -222,7 +222,9 @@
   .mainHeading {
     font-size: 40px;
   }
-
+  .btn {
+    padding: 0.5rem 0rem;
+  }
   .aside {
     width: auto;
     height: 80%;
