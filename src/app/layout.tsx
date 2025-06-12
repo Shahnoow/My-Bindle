@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import Head from "next/head";
 import Footer from "./components/Footer";
 
 export const metadata = {
@@ -13,6 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="20" />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Head>
       <body>
         {children}
         <Footer />
